@@ -1,0 +1,13 @@
+INPUT(
+./release\main.o
+./release\estructuraparcial1.o
+./release\calle.o
+./release\cartas.o
+./release\tarea1semafaro.o
+./release\tareas3arreglos.o
+./release\tarea4cartas.o
+./release\moc_estructuraparcial1.o
+./release\moc_tarea1semafaro.o
+./release\moc_tareas3arreglos.o
+./release\moc_tarea4cartas.o
+);

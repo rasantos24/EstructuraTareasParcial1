@@ -1,0 +1,13 @@
+INPUT(
+./debug\main.o
+./debug\estructuraparcial1.o
+./debug\calle.o
+./debug\cartas.o
+./debug\tarea1semafaro.o
+./debug\tareas3arreglos.o
+./debug\tarea4cartas.o
+./debug\moc_estructuraparcial1.o
+./debug\moc_tarea1semafaro.o
+./debug\moc_tareas3arreglos.o
+./debug\moc_tarea4cartas.o
+);
