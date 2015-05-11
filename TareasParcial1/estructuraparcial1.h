@@ -4,6 +4,8 @@
 #include "tarea1semafaro.h"
 #include "tareas3arreglos.h"
 #include "tarea4cartas.h"
+#include "tarea5.h"
+#include "tarea6.h"
 
 namespace Ui {
 class EstructuraParcial1;
@@ -25,6 +27,10 @@ private slots:
     void on_Tarea3Arreglo_clicked();
 
     void on_Tarea4_clicked();
+
+    void on_Tarea5_clicked();
+
+    void on_Tarea6_clicked();
 
 private:
     Ui::EstructuraParcial1 *ui;

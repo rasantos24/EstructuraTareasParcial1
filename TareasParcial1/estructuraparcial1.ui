@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>485</width>
+    <width>424</width>
     <height>279</height>
    </rect>
   </property>
@@ -92,13 +92,52 @@
      <string>Semana 1 y 2</string>
     </property>
    </widget>
+   <widget class="QLineEdit" name="Semanas_2">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>60</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>    Semana 3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Tarea5">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>90</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tarea 5</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Tarea6">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>120</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tarea 6</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>485</width>
+     <width>424</width>
      <height>21</height>
     </rect>
    </property>

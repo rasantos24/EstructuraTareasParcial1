@@ -38,3 +38,15 @@ void EstructuraParcial1::on_Tarea4_clicked()
     Tarea4Cartas tgmr;
     tgmr.exec();
 }
+
+void EstructuraParcial1::on_Tarea5_clicked()
+{
+    Tarea5 tgmr;
+    tgmr.exec();
+}
+
+void EstructuraParcial1::on_Tarea6_clicked()
+{
+    Tarea6 tgmr;
+    tgmr.exec();
+}
