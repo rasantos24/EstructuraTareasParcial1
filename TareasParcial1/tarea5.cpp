@@ -53,7 +53,8 @@ void Tarea5::anular()
 void Tarea5::llenar()
 {
     Nodo* tempo = tope;
-    while (tempo!=NULL){
+    while (tempo!=NULL)
+    {
         ui->mostrar->addItem(tempo->valor);
         tempo=tempo->anterior;
     }

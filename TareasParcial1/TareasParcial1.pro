@@ -21,7 +21,9 @@ SOURCES += main.cpp\
     tarea4cartas.cpp \
     tarea5.cpp \
     nodo.cpp \
-    tarea6.cpp
+    tarea6.cpp \
+    tareas7.cpp \
+    arbol.cpp
 
 HEADERS  += estructuraparcial1.h \
     calle.h \
@@ -31,11 +33,14 @@ HEADERS  += estructuraparcial1.h \
     tarea4cartas.h \
     tarea5.h \
     nodo.h \
-    tarea6.h
+    tarea6.h \
+    tareas7.h \
+    arbol.h
 
 FORMS    += estructuraparcial1.ui \
     tarea1semafaro.ui \
     tareas3arreglos.ui \
     tarea4cartas.ui \
     tarea5.ui \
-    tarea6.ui
+    tarea6.ui \
+    tareas7.ui

@@ -9,7 +9,11 @@ class Nodo
 public:
     Nodo(QString valor);
     QString valor;
+    int valores;
+    Nodo(int valores);
     Nodo* anterior;
+    Nodo* siguiente;
+
 };
 
 #endif // NODO_H

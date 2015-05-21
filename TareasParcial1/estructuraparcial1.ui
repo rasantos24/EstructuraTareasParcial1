@@ -79,7 +79,7 @@
      <string>Tarea 1</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="Semanas">
+   <widget class="QLineEdit" name="Semanas1y2">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -92,7 +92,7 @@
      <string>Semana 1 y 2</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="Semanas_2">
+   <widget class="QLineEdit" name="Semanas3">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -129,6 +129,32 @@
     </property>
     <property name="text">
      <string>Tarea 6</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Semanas4">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>60</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>    Semana 4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Tarea7">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>90</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tarea 7</string>
     </property>
    </widget>
   </widget>
