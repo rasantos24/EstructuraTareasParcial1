@@ -25,6 +25,9 @@
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;AB&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
   </widget>
   <widget class="QLabel" name="AC">
    <property name="geometry">
@@ -195,7 +198,7 @@
     <string>Pintar</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="Semafaro">
    <property name="geometry">
     <rect>
      <x>110</x>

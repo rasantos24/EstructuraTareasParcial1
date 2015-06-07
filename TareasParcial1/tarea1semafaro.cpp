@@ -87,24 +87,24 @@ void Tarea1Semafaro::pintar()
     {
         for(vector<Calle*>::iterator e = Grafo.begin(); e!=Grafo.end(); e++)
         {
-            if((*e)->existeCalle((*g)->getNombre())==false)
+            if((*e)->existeCalle((*g)->getNombre()) == false)
             {
                 azul = true;
             }
-            else if((*e)->existeCalle((*g)->getNombre()) && (*e)->getColor()=="BLUE")
+            else if((*e)->existeCalle((*g)->getNombre()) && (*e)->getColor()=="AZUL")
             {
                 rojo = true;
                 azul = false;
                 cambio = false;
             }
-            else if((*e)->existeCalle((*g)->getNombre()) && (*e)->getColor()=="RED")
+            else if((*e)->existeCalle((*g)->getNombre()) && (*e)->getColor()=="ROJO")
             {
                 cambio = false;
                 rojo = false;
                 azul = false;
                 verde = true;
             }
-            else if((*e)->existeCalle((*g)->getNombre()) && (*e)->getColor()=="GREEN")
+            else if((*e)->existeCalle((*g)->getNombre()) && (*e)->getColor()=="VERDE")
             {
                 cambio = true;
                 rojo = false;
@@ -117,27 +117,28 @@ void Tarea1Semafaro::pintar()
                 rojo = false;
                 verde = false;
                 cambio = false;
+                break;
             }
         }
 
-        if(azul&&!cambio)
+        if(azul && !cambio)
         {
-            (*g)->cambiarColor("BLUE");
+            (*g)->cambiarColor("AZUL");
             azul = false;
         }
-        if(rojo&&!cambio)
+        if(rojo && !cambio)
         {
-            (*g)->cambiarColor("RED");
+            (*g)->cambiarColor("ROJO");
             rojo = false;
         }
-        if(verde&&!cambio)
+        if(verde && !cambio)
         {
-            (*g)->cambiarColor("GREEN");
+            (*g)->cambiarColor("VERDE");
             verde = false;
         }
         if(cambio)
         {
-            (*g)->cambiarColor("YELLOW");
+            (*g)->cambiarColor("AMARILLO");
             cambio = false;
         }
     }
@@ -149,22 +150,14 @@ void Tarea1Semafaro::comparar()
     {
         for(vector<Calle*>::iterator g = Grafo.begin(); g!=Grafo.end(); g++)
         {
-            if((*l)->text()==(*g)->getNombre()&&(*g)->getColor()=="BLUE")
-            {
+            if((*l)->text()==(*g)->getNombre()&&(*g)->getColor() == "AZUL")
                 (*l)->setStyleSheet("QLabel{color:blue;}");
-            }
-            else if((*l)->text()==(*g)->getNombre()&&(*g)->getColor()=="RED")
-            {
+            else if((*l)->text()==(*g)->getNombre()&&(*g)->getColor() == "ROJO")
                 (*l)->setStyleSheet("QLabel{color:red;}");
-            }
-            else if((*l)->text()==(*g)->getNombre()&&(*g)->getColor()=="GREEN")
-            {
+            else if((*l)->text()==(*g)->getNombre()&&(*g)->getColor() == "VERDE")
                 (*l)->setStyleSheet("QLabel{color:green;}");
-            }
-            else if((*l)->text()==(*g)->getNombre()&&(*g)->getColor()=="YELLOW")
-            {
+            else if((*l)->text()==(*g)->getNombre()&&(*g)->getColor() == "AMARILLO")
                 (*l)->setStyleSheet("QLabel{color:yellow;}");
-            }
         }
     }
 }

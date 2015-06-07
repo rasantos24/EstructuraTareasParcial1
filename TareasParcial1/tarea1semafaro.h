@@ -20,28 +20,25 @@ public:
     ~Tarea1Semafaro();
 
     Calle* AB;
-        Calle* AC;
-        Calle* AD;
-        Calle* BA;
-        Calle* BC;
-        Calle* BD;
-        Calle* DA;
-        Calle* DB;
-        Calle* DC;
-        Calle* EA;
-        Calle* EB;
-        Calle* EC;
-        Calle* ED;
-        vector<Calle*> Grafo;
-        vector<QLabel*> Alabel;
-
-        void pintar();
-        void comparar();
+    Calle* AC;
+    Calle* AD;
+    Calle* BA;
+    Calle* BC;
+    Calle* BD;
+    Calle* DA;
+    Calle* DB;
+    Calle* DC;
+    Calle* EA;
+    Calle* EB;
+    Calle* EC;
+    Calle* ED;
+    vector<Calle*> Grafo;
+    vector<QLabel*> Alabel;
+    void pintar();
+    void comparar();
 
 private slots:
     void on_pintarCalles_clicked();
-
-    void on_AB_linkActivated(const QString &link);
 
 private:
     Ui::Tarea1Semafaro *ui;

@@ -3,7 +3,7 @@
 Calle::Calle(QString nombre)
 {
     this->nombre = nombre;
-    color = "WHITE";
+    color = "BLANCO";
 }
 
 QString Calle::getNombre()
@@ -19,9 +19,7 @@ vector<Calle*> Calle::getAdyacente()
 void Calle::getAgregar()
 {
     for(vector<Calle*>::iterator e = adyacente.begin(); e!=adyacente.end(); e++)
-    {
         cout<<(*e)->getNombre().toStdString()<<endl;
-    }
 }
 
 string Calle::getColor()
@@ -33,10 +31,8 @@ bool Calle::existeCalle(QString nombre)
 {
     for(vector<Calle*>::iterator e = adyacente.begin(); e!=adyacente.end(); e++)
     {
-        if((*e)->getNombre()== nombre)
-        {
+        if((*e)->getNombre() == nombre)
             return true;
-        }
     }
     return false;
 }

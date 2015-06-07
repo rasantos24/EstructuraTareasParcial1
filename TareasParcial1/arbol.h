@@ -11,6 +11,8 @@ public:
     Arbol* raiz;
     Arbol* hijoDerecho;
     Arbol* hijoIzquierdo;
+    Arbol* siguiente;
+    Arbol* global;
     int valor;
     Arbol(int valor);
     void insertar(int valor, Arbol* actual);
@@ -19,9 +21,11 @@ public:
     Arbol* getMaximoDerecho(Arbol* raiz);
     void actualizar(int valor, int viejo);
     Arbol* getRaiz(int valor, Arbol* raiz);
-    void preOrden(int valor, Arbol* raiz);
-    void inOrden(int valor, Arbol* raiz);
-    void postOrden(int valor, Arbol* raiz);
+    void preOrden(Arbol* raiz);
+    void inOrden(Arbol* raiz);
+    void postOrden(Arbol* raiz);
+    void SDMR(char val);
+    void recorrer(char val);
 };
 
 #endif // ARBOL_H

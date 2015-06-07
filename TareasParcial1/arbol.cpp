@@ -105,29 +105,97 @@ Arbol* Arbol::getRaiz(int valor, Arbol *raiz)
     return NULL;
 }
 
-void Arbol::preOrden(int valor, Arbol *raiz)
+void Arbol::preOrden(Arbol *raiz)
 {
     if(!raiz)
         return;
-    insertar(valor, raiz);
-    preOrden(valor, raiz->hijoIzquierdo);
-    preOrden(valor, raiz->hijoDerecho);
+    insertar(valor,raiz);
+    preOrden(raiz->hijoIzquierdo);
+    preOrden(raiz->hijoDerecho);
 }
 
-void Arbol::inOrden(int valor, Arbol *raiz)
+void Arbol::inOrden(Arbol *raiz)
 {
     if(!raiz)
         return;
-    inOrden(valor, raiz->hijoIzquierdo);
-    insertar(valor, raiz);
-    inOrden(valor, raiz->hijoDerecho);
+    inOrden(raiz->hijoIzquierdo);
+    insertar(valor,raiz);
+    inOrden(raiz->hijoDerecho);
 }
 
-void Arbol::postOrden(int valor, Arbol *raiz)
+void Arbol::postOrden(Arbol *raiz)
 {
     if(!raiz)
         return;
-    postOrden(valor, raiz->hijoIzquierdo);
-    postOrden(valor, raiz->hijoDerecho);
-    insertar(valor, raiz);
+    postOrden(raiz->hijoIzquierdo);
+    postOrden(raiz->hijoDerecho);
+    insertar(valor,raiz);
+}
+
+void Arbol::recorrer(char val)
+{
+    if(!raiz)
+        return;
+    Arbol* temp;
+    while(!temp)
+    {
+        switch(val)
+        {
+            case '+':
+                SDMR(val);
+            break;
+
+            case '-':
+                SDMR(val);
+            break;
+
+            case '*':
+                SDMR(val);
+            break;
+
+            case '/':
+                SDMR(val);
+            break;
+        }
+
+        temp = temp->siguiente;
+    }
+}
+
+void Arbol::SDMR(char val)
+{
+    Arbol* tempo;
+
+    switch(val)
+    {
+        case '+':
+            global->siguiente->siguiente->valor += tempo->valor;
+            inOrden(tempo);
+        break;
+
+        case '-':
+            global->siguiente->siguiente->valor -= tempo->valor;
+            inOrden(tempo);
+        break;
+
+        case '*':
+            global->siguiente->siguiente->valor *= tempo->valor;
+            inOrden(tempo);
+        break;
+
+        case '/':
+            global->siguiente->siguiente->valor /= tempo->valor;
+            inOrden(tempo);
+        break;
+    }
+
+    tempo = global->siguiente->siguiente;
+    global->siguiente->siguiente = tempo->siguiente;
+    tempo->siguiente = tempo;
+
+    if(!tempo->hijoDerecho && !tempo->hijoIzquierdo)
+    {
+        inOrden(tempo);
+    }
+
 }
